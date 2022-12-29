@@ -21,7 +21,7 @@ const consumer = new Consumer(
 );
 
 consumer.on('message', message => {
-    console.log(message.value);
+    console.log(message);
 });
 
 consumer.on('error', err => {
