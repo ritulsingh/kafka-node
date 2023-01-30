@@ -19,7 +19,7 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: '1'
       KAFKA_CREATE_TOPICS: 'example-topic:1:1'
-      KAFKA_ADVERTISED_HOST_NAME: host.docker.internal # change to 172.17.0.1 if running on Ubuntu
+      KAFKA_ADVERTISED_HOST_NAME: host.docker.internal
     image: 'wurstmeister/kafka:2.13-2.8.1'
     volumes:
       - '/var/run/docker.sock:/var/run/docker.sock'
